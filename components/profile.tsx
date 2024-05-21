@@ -9,7 +9,7 @@ import { AiOutlinePhone } from "react-icons/ai";
 export default function BackgroundBeamsDemo() {
   return (
     <>
-      <div className="border border-[#20136b] h-[40rem] w-full rounded-md bg-neutral-950 relative flex justify-center antialiased">
+      <div className="border border-[#20136b] h-auto min-h-[40rem] w-full rounded-md bg-neutral-950 relative flex justify-center antialiased p-4 md:p-6">
         <div className="py-9 gap-y-10 text-[15px] md:text-[16px] flex flex-col items-start z-10 text-[#d2cece]">
           <div className="flex flex-col gap-6 md:gap-8">
             {[
@@ -62,8 +62,8 @@ export default function BackgroundBeamsDemo() {
                 name: '9652332236',
               },
             ].map((item, index) => (
-              <div key={index} className="flex flex-row justify-between w-full cursor-pointer">
-                <Link href={item.href} className="flex flex-row gap-2 w-40 pt-3">
+              <div key={index} className="flex flex-col md:flex-row justify-between w-full cursor-pointer">
+                <Link href={item.href} className="flex flex-row gap-2 w-full md:w-40 pt-3">
                   {item.icon}
                   <span>{item.label}</span>
                 </Link>
