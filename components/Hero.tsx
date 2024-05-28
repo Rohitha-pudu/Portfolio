@@ -42,7 +42,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Rohitha, a UX Designer and Full Stack Developer.
+            Hi! I&apos;m Rohitha, a UX Designer and Front End Developer.
           </p>
           {/* <TypewriterEffectSmoothDemo/> */}
 
